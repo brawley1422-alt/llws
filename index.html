@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>LLWS Office Pool</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<script>
+  // Current live tunnel for the pool server. Update this line + push if the tunnel URL changes.
+  var TARGET = "https://align-cal-thumbnails-conclusion.trycloudflare.com";
+  location.replace(TARGET + location.search + location.hash);
+</script>
+<style>
+  body{margin:0;min-height:100vh;display:grid;place-items:center;background:#0b1410;color:#e8f1eb;font:16px/1.5 system-ui}
+  a{color:#7fd8a8}
+</style>
+</head>
+<body>
+  <p>Heading to the pool… <a id="m" href="#">tap here if nothing happens</a></p>
+  <script>document.getElementById('m').href = TARGET;</script>
+</body>
+</html>
